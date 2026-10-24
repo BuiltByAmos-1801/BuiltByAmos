@@ -35,8 +35,7 @@ export default function Navbar() {
       <header className="site-header">
         <nav className="nav-shell" aria-label="Main navigation">
           <a className="wordmark" href="#top" onClick={closeMenu} aria-label="Built By Amos home">
-            <span className="wordmark-symbol" aria-hidden="true">B.</span>
-            <span>BUILT BY AMOS</span>
+            <img className="wordmark-image" src="/images/amos-logo.png" alt="Built By Amos" width="380" height="90" />
           </a>
           <button
             className="menu-toggle"

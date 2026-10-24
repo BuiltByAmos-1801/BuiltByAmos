@@ -17,8 +17,7 @@ export default function FounderProfile() {
     <main className="founder-page">
       <header className="founder-header">
         <a className="wordmark" href="/#top" aria-label="Built By Amos home">
-          <span className="wordmark-symbol" aria-hidden="true">B.</span>
-          <span>BUILT BY AMOS</span>
+          <img className="wordmark-image" src="/images/amos-logo.png" alt="Built By Amos" width="380" height="90" />
         </a>
         <a className="text-link" href="/#top">Back to the studio <ArrowRight size={15} aria-hidden="true" /></a>
       </header>
@@ -42,12 +41,13 @@ export default function FounderProfile() {
         <figure className="founder-artwork">
           <img
             src="/images/built-by-amos-ideas-to-solutions.png"
-            alt="Built By Amos brand artwork with the message Ideas to Real Solutions"
+            alt="Amos Anand, founder of Built By Amos, seated in his studio"
+            className="founder-portrait"
             width="2048"
             height="768"
             fetchpriority="high"
           />
-          <figcaption>Built By Amos brand artwork</figcaption>
+          <figcaption>Amos Anand <span aria-hidden="true">·</span> Founder of Built By Amos</figcaption>
         </figure>
       </section>
 

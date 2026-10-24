@@ -51,35 +51,36 @@ function App() {
       <Navbar />
       <main id="main-content">
         <section className="hero section-wrap" id="top" aria-labelledby="hero-title">
-          <div className="hero-inner">
-            <div className="hero-copy">
-              <span className="eyebrow">Independent digital studio <i aria-hidden="true">·</i> India / Worldwide</span>
-              <h1 id="hero-title">Good businesses deserve <em>better digital experiences.</em></h1>
-              <p>
-                We design and build thoughtful websites, online stores and digital products for ambitious brands.
-              </p>
-              <div className="hero-actions">
-                <a className="button button-dark" href="#contact">Start a Project <ArrowUpRight size={17} aria-hidden="true" /></a>
-                <a className="button button-outline" href="#work">Explore Our Work <ArrowDown size={16} aria-hidden="true" /></a>
-              </div>
-              <div className="hero-capabilities"><span>Strategy</span><i>·</i><span>Design</span><i>·</i><span>Development</span></div>
-            </div>
-            <figure className="hero-art">
-              <div className="hero-art-topline"><span>BUILT BY AMOS</span><span>IDEAS → CODE → REAL SOLUTIONS</span></div>
-              <div className="hero-art-mark" aria-hidden="true">B<span>.</span></div>
-              <div className="hero-art-caption"><span>Independent studio</span><span>Ranchi, India</span></div>
-            </figure>
-          </div>
-          <a className="hero-image-link" href="#about" aria-label="Meet Amos Anand, founder of Built By Amos">
+          <h1 className="hero-banner-heading" id="hero-title">Modern digital solutions for ambitious brands.</h1>
+          <figure className="hero-banner">
             <img
-              src="/images/built-by-amos-ideas-to-solutions.png"
-              alt="Founder Amos Anand and Built By Amos — Ideas to Real Solutions"
-              width="2048"
-              height="768"
+              src="/images/modern-digital-solutions-hero-banner.png"
+              alt="Built By Amos creates modern digital experiences for ambitious brands, including websites, apps and automation."
+              width="1983"
+              height="793"
               fetchpriority="high"
             />
-          </a>
-          <div className="hero-image-note"><span>Built with intention.</span><span>Led by Amos Anand <ArrowDown size={14} aria-hidden="true" /></span></div>
+            <a className="hero-banner-cta hero-banner-cta--project" href="#contact" aria-label="Start a project" />
+            <a className="hero-banner-cta hero-banner-cta--work" href="#work" aria-label="Explore our work" />
+          </figure>
+          <div className="hero-banner-mobile">
+            <span className="eyebrow">Independent digital studio <i aria-hidden="true">·</i> India / Worldwide</span>
+            <p>We design and build thoughtful websites, online stores and digital products for ambitious brands.</p>
+            <div className="hero-actions">
+              <a className="button button-dark" href="#contact">Start a Project <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <a className="button button-outline" href="#work">Explore Our Work <ArrowDown size={16} aria-hidden="true" /></a>
+            </div>
+          </div>
+        </section>
+
+        <section className="studio-banner section-wrap" aria-label="Built By Amos digital studio">
+          <img
+            src="/images/amos-banner.png"
+            alt="Built By Amos — independent digital studio creating websites, apps and automation for businesses."
+            width="1983"
+            height="793"
+            loading="lazy"
+          />
         </section>
 
         <section className="work-section section-wrap" id="work" aria-labelledby="work-title">
@@ -164,10 +165,10 @@ function App() {
         <section className="about-section section-wrap" id="about" aria-labelledby="about-title">
           <div className="about-image-wrap">
             <img
-              src="/images/built-by-amos-ideas-to-solutions.png"
+              src="/images/Amos-BuiltByAmos.png"
               alt="Amos Anand, founder of Built By Amos"
-              width="2048"
-              height="768"
+              width="1310"
+              height="1200"
               loading="lazy"
             />
             <span className="about-image-caption">Amos Anand <i>·</i> Founder</span>
@@ -235,7 +236,9 @@ function App() {
       <footer className="site-footer">
         <div className="footer-main">
           <div className="footer-brand">
-            <a className="wordmark wordmark--footer" href="#top"><span className="wordmark-symbol" aria-hidden="true">B.</span><span>BUILT BY AMOS</span></a>
+            <a className="wordmark wordmark--footer" href="#top" aria-label="Built By Amos home">
+              <img className="wordmark-image" src="/images/amos-logo.png" alt="Built By Amos" width="380" height="90" />
+            </a>
             <p>An independent digital studio building thoughtful digital experiences for ambitious brands.</p>
             <span className="footer-location">{siteConfig.location}</span>
           </div>

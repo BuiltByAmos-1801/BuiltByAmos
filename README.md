@@ -43,6 +43,7 @@ Vite writes production files to `dist\`. Preview the build locally before upload
 - Edit `src\config\site.js` to update the studio name, founder, location, production URL, email, and official social links.
 - Edit `src\data\content.js` to update project concepts, services, provisional starting prices, process steps, and FAQs.
 - The three work visuals in `public\images\` are self-initiated design concepts, not client case studies.
+- The header, founder-page and footer logo at `public\images\amos-logo.png`, and the favicon at `public\favicon.png`, are crops of the supplied Built By Amos banner artwork.
 - The founder artwork at `public\images\built-by-amos-ideas-to-solutions.png` was provided by the site owner. Replace it only with an approved image.
 - No separate founder portrait or personal social profile was available during implementation. The profile page uses the supplied brand artwork, does not present it as a portrait, and links only to the agency's official Instagram.
 - The listed starting prices are initial figures from the owner-provided brief; confirm them before treating them as current quotes.
