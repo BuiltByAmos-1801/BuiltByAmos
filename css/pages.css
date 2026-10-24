@@ -1,0 +1,36 @@
+
+.page-shell { padding-top: 2rem; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem; }
+.filter-btn.is-active {
+  background: linear-gradient(135deg, rgba(167,139,250,0.16), rgba(139,233,253,0.1));
+  border-color: rgba(167,139,250,0.42);
+  color: var(--text);
+}
+.inline-list { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.inline-list span {
+  padding: 0.45rem 0.7rem; border-radius: 999px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); color: var(--muted);
+}
+.maintenance-hero { padding: clamp(3rem, 8vw, 7rem) 0; }
+.maintenance-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+.maintenance-visual { min-width: 0; padding: 1rem; border: 1px solid var(--line); border-radius: 32px; background: linear-gradient(145deg, rgba(167,139,250,0.13), rgba(139,233,253,0.06)); box-shadow: var(--shadow); }
+.maintenance-visual img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 24px; }
+.maintenance-copy { max-width: 600px; }
+.maintenance-copy h1 { font-size: clamp(2.7rem, 5vw, 4.7rem); }
+.maintenance-status { display: inline-flex; align-items: center; gap: 0.6rem; }
+.maintenance-status::before { content: ""; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 1rem rgba(139,233,253,0.7); }
+.maintenance-card { margin: 1.5rem 0; }
+.maintenance-card p { margin-bottom: 0; }
+.maintenance-card .card-topline { margin-bottom: 0.4rem; }
+.maintenance-card .progress-track { height: 0.55rem; margin: 1rem 0; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,0.08); }
+.maintenance-card .progress-fill { display: block; width: 68%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--violet), var(--cyan)); }
+.maintenance-card .progress-foot { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 0.85rem; }
+.maintenance-card .pulse { color: var(--cyan); }
+.maintenance-capabilities { padding-top: 1rem; }
+.profile-details { display: grid; gap: 0.65rem; }
+.profile-details p { margin: 0; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+@media (max-width: 760px) {
+  .maintenance-layout { grid-template-columns: 1fr; }
+  .maintenance-copy { order: -1; }
+  .maintenance-visual { max-width: 560px; margin: 0 auto; }
+}
