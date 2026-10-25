@@ -1,0 +1,12 @@
+.founder-artwork img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.founder-project img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
